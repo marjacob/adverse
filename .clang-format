@@ -1,0 +1,30 @@
+---
+AccessModifierOffset: -8
+AlignEscapedNewlines: Left
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: Empty
+AlwaysBreakAfterReturnType: All
+AlwaysBreakBeforeMultilineStrings: true
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeBraces: WebKit
+BreakConstructorInitializers: AfterColon
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^".+"$'
+    Priority: 1
+  - Regex: '^<.+\..+>$'
+    Priority: 2
+  - Regex: '^<.+>$'
+    Priority: 3
+IncludeIsMainRegex: _(impl|test)?$
+IndentWidth: 8
+KeepEmptyLinesAtTheStartOfBlocks: false
+PenaltyReturnTypeOnItsOwnLine: 0
+PointerAlignment: Left
+SpaceAfterTemplateKeyword: false
+UseTab: ForIndentation
+...
