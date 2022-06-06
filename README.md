@@ -39,10 +39,21 @@ The `Makefile` provides the following targets.
 
 * `make all` (default) alias for `make print`.
 * `make clean` remove all generated files.
+* `make init` configure git hooks.
 * `make print` generate a version header, build a test program that uses it and
   execute the program.
 * `make test` generate a version header, then build a test program that uses it.
 * `make version.h` generate a version header.
+
+To ensure that the version header is always up-to-date, use a Git post-commit
+hook like [this](.githooks/post-commit). Make sure that the script is executable
+and that `core.hooksPath` is set correctly.
+
+```shell
+git config core.hooksPath .githooks
+```
+
+The `init` target in the `Makefile` will do the same thing.
 
 Example
 -------

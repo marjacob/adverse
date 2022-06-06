@@ -9,6 +9,10 @@ all: print
 clean:
 	$(RM) $(header) $(test)
 
+.PHONY: init
+init:
+	git config core.hooksPath .githooks/
+
 .PHONY: print
 print: $(test)
 	./$(test)
